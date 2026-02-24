@@ -2,33 +2,39 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     
+    <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="favicon.png">
     
+    <title>Dashboard</title>
+    
     <style>
-        body, html {
-            margin: 0; 
-            padding: 0; 
-            width: 100%;
-            height: 100%; 
-            overflow: hidden; 
+        :root {
             background-color: #000000;
         }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+            overflow: hidden;
+        }
         iframe {
-            display: block; /* Força o iframe a se comportar como um bloco, removendo espaços em branco nativos */
-            width: 100%; 
-            height: 100%; 
+            display: block;
+            width: 100vw;
+            height: 100vh;
             border: none;
             margin: 0;
             padding: 0;
+            background-color: #000000;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://lcs-research.streamlit.app/?embed=true" frameborder="0" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+    <iframe src="https://lcs-research.streamlit.app/?embed=true&theme=dark" frameborder="0" marginheight="0" marginwidth="0" allowfullscreen></iframe>
 </body>
 </html>
